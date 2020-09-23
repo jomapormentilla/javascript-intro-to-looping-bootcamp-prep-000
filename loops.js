@@ -15,5 +15,12 @@ function whileLoop(n){
 }
 
 function doWhileLoop(num){
+  function incrementVariable() {
+    i = i + 1;
+    return i;
+  }
   
+  do{
+    incrementVariable()
+  }while(incrementVariable() < num)
 }
